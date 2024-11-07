@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/utils.dart';
+import 'package:yoursportz/view/Home_Screen.dart';
 import 'package:yoursportz/view/Your_information_screen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -74,6 +75,9 @@ class _LoginScreenState extends State<LoginScreen> {
               height: 20,
             ),
             GestureDetector(
+              onTap: (){
+                Get.to(Homepage());
+              },
               child: Container(
                 alignment: Alignment.center,
                 height: 50,
